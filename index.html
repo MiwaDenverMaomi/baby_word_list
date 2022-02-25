@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang=ja>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Baby Words List</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/cfb6f25681.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="js-header">
+
+    <h1>BABY WORDS LIST</h1>
+    <div class="sp-vocab-menu-box js-sp-vocab-menu-box">
+      <div class="sp-vocab-menu js-sp-vocab-menu"></div>
+      <div class="sp-vocab-menu js-sp-vocab-menu"></div>
+      <div class="sp-vocab-menu js-sp-vocab-menu"></div>
+    </div>
+
+  </header>
+  <div class="wrapper js-wrapper">
+    <div class="main">
+      <div class="main-wrapper">
+        <form class="form js-addForm">
+          <label>Add today's word</label><span class="err js-add-err"></span>
+          <input type="text" class="inputArea" name="add" placeholder="Type today's new word!">
+          <label>Meaning</label><span class="err js-addVocab-err"></span>
+          <input type="text" class="inputVocabArea" name="addVocab" placeholder="" value="Unknown">
+          <button type="button" class="btn js-submitBtn">ADD WORD</button>
+        </form>
+        <form class="search_box js-search">
+          <input type="text" class="inputArea searchArea js-searchArea" name="search" placeholder="Search words">
+          <button class="s-btn js-searchCancel">CLEAR SEARCH</button>
+        </form>
+        <form class="radio-form js-radio">
+          <input type="radio" class="checkbox" value="ch-new-to-old" name="sort"><span class="checkbox-style">New-Old</span>
+          <input type="radio" class="checkbox" value="ch-old-to-new" name="sort"><span class="checkbox-style">Old-New</span>
+          <input type="radio" class="checkbox" value="ch-a-to-z" name="sort"><span class="checkbox-style">A-Z</span>
+          <input type="radio" class="checkbox" value="ch-z-to-a" name="sort"><span class="checkbox-style">Z-A</span> <input type="radio" class="checkbox" value="ch-favorite" name="sort"><span class="checkbox-style">Favorite</span><button type="submit" class="s-btn js-sort">SORT</button>
+        </form>
+
+        <ul class="list js-list"></ul>
+        <buttton id="all-clear-btn" class="btn js-submitBtn">All Clear</buttton>
+        <ul class="pagenation js-pagenation"></ul>
+      </div>
+    </div>
+    <div class="vocab js-vocabListWrapper">
+      <h2>Vocaburaries</h2>
+      <ul class="vocabList js-vocabList"></ul>
+    </div>
+  </div>
+  <div class="searchTarget" style="display:none"></div>
+  <footer class="js-footer">&copy;zazacat.us</footer>
+  <script src="app.js"></script>
+</body>
+</html>
